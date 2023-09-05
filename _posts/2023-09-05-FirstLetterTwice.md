@@ -61,7 +61,7 @@ public:
 
 뭐 이렇게 풀어도 퍼포먼스는 그럭저럭 잘 나왔다. 하지만 이건 문자 종류가 좀만 많아져도 보기 지저분해진다. 만약 문자열이 유니코드로 이루어져 있었다면, `arr[65536]`이라고 선언된 배열의 모습이 결코 깔끔해 보이진 않을 것이다. 거기다 C++은 STL이 있는 만큼, 가능하면 배열보단 STL의 사용이 생산성 측면에서 권장된다.
 
-그렇게 난 배열로 한번 푼 다음 다른 사람의 풀이를 보다 C++ STL에 unordered_map이 있다는 것을 알아차렸다. 이름을 보면 binary tree로 구현한 map 자료구조와 비슷하지만, unordered_map은 hash table로 구현한 자료구조이며, 중복 데이터를 허용하지 않는다. map의 시간 복잡도는 $O(log n)$ 이고, unordered_map의 시간 복잡도는 $O(1)$ 로, unordered_map이 데이터가 많을 때 월등히 성능이 좋음을 알 수 있다.
+그렇게 난 배열로 한번 푼 다음 다른 사람의 풀이를 보다 C++ STL에 unordered_map이 있다는 것을 알아차렸다. 이름을 보면 binary tree로 구현한 map 자료구조와 비슷하지만, unordered_map은 hash table로 구현한 자료구조이며, 중복 데이터를 허용하지 않는다. map의 시간 복잡도는 \\O(log n) 이고, unordered_map의 시간 복잡도는 \\O(1) 로, unordered_map이 데이터가 많을 때 월등히 성능이 좋음을 알 수 있다.
 
 ```C++
 class Solution {
